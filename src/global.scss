@@ -35,3 +35,75 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+:root{
+    // cores
+    --color-primary-main-100: #BF2C2F;
+    --color-primary-80: #DE5E60;
+    --color-primary-60: #EBC6C6;
+    --color-primary-40: #F6E7E7;
+
+    --color-sucess-80: #649757;
+    --color-sucess-60: #8FC481;
+    --color-sucess-40: #BBE2B1;
+
+    //textos
+    --text-dark: #434343;
+
+    // backgrounds
+    --bg-white: #F8F8F8;
+    --bg-gray: #EEEEEE;
+
+    --dark: #434343;
+    --dark-medium: #737373;
+    --dark-light: #B3B3B3;
+}
+
+
+// botoes
+.btn{
+    border-radius: 24px;
+    color: var(--text-dark);
+    box-shadow: 1px 1px 1px 0px #00000014;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-secondary-border{
+    background-color: var(--bg-white);
+    border: 1px solid var(--bg-gray);
+}
+
+
+//botao primario
+.btn-primary{
+    background-color: var(--color-primary-40);
+    color: var(--color-primary-80);
+}
+.btn-primary:hover{
+    background-color: var(--color-primary-80);
+    color: var(--color-primary-40);
+}
+
+
+//botao secundario
+.btn-secondary{
+    background-color: var(--bg-gray);
+    border:none;
+}
+.btn-secondary:hover{
+    background-color: var(--color-primary-40);
+    color: var(--color-primary-80);
+
+}
+
+
+//botao sucess
+.btn-sucess{
+    background-color: var(--color-sucess-40);
+    border: none;
+}
+.btn-sucess:hover{
+    background-color: var(--color-sucess-60);
+}
