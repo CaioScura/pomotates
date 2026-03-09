@@ -37,7 +37,13 @@
 @import '@ionic/angular/css/palettes/dark.system.css';
 
 
+// fonte poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root{
+    //fonte
+    --ion-font-family: 'Poppins', sans-serif;
+
     // cores
     --color-primary-main-100: #BF2C2F;
     --color-primary-80: #DE5E60;
