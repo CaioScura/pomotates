@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class WelcomeComponent {
   constructor(private router: Router) {}
 
-  goToTabs() {
-    this.router.navigate(['/tabs']);
+  goToOnboarding() {
+    this.router.navigate(['/onboarding']);
   }
 }

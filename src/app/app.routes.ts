@@ -11,6 +11,10 @@ export const routes: Routes = [
     loadComponent: () => import('./welcome/welcome.component').then((m) => m.WelcomeComponent),
   },
   {
+    path: 'onboarding',
+    loadComponent: () => import('./welcome/onboarding/onboarding.component').then((m) => m.OnboardingComponent),
+  },
+  {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
   },

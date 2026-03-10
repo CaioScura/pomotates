@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+
+  <div class="onboarding-container">
+    <swiper-container 
+      pagination="true"
+      pagination-clickable="true"
+      space-between="30"
+      slides-per-view="1"
+      loop="true">
+
+      <!-- primeiro texto -->
+      <swiper-slide>
+        <div class="slide-content">
+          <div class="icon">🍅</div>
+          <p class="slide-text">Impulsione seus períodos de foco com Pomomates! Já experimentou fazer pomodoro com amigos?</p>
+        </div>
+      </swiper-slide>
+
+      <!-- segundo texto -->
+      <swiper-slide>
+        <div class="slide-content">
+          <div class="icon">🍅</div>
+          <p class="slide-text">Faça pomodoro todos os dias para garantir o check-in diário! Não esqueça de registrar com uma foto! ;) 
+  </p>
+        </div>
+      </swiper-slide>
+
+      <!-- terceiro texto -->
+      <swiper-slide>
+        <div class="slide-content">
+          <div class="icon">🍅</div>
+          <p class="slide-text">Crie grupos de amigos para alavancarem uma competição saudável, como verdadeiros pomomates!</p>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+
+    <div class="btn-container">
+      <ion-button expand="block" class="btn btn-secondary" (click)="goBack()">
+          Pular
+      </ion-button>
+
+      <ion-button expand="block" class="btn btn-sucess" (click)="goToTabs()">
+          Próximo
+      </ion-button>
+
+      
+    </div>
+  </div>
+</ion-content>
