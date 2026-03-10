@@ -69,47 +69,70 @@
 
 // botoes
 .btn{
-    border-radius: 24px;
-    color: var(--text-dark);
-    box-shadow: 1px 1px 1px 0px #00000014;
-    font-weight: 500;
-    font-size: 14px;
+    --border-radius: 24px;
+    --color: var(--text-dark);
+    --box-shadow: 1px 1px 1px 0px #00000014;
+    --font-weight: 500;
+    --font-size: 14px;
+    text-transform: none;
 }
 
 .btn-secondary-border{
-    background-color: var(--bg-white);
-    border: 1px solid var(--bg-gray);
+    --background: var(--bg-white);
+    --border-color: var(--bg-gray);
+    --border-width: 1px;
 }
 
 
 //botao primario
 .btn-primary{
-    background-color: var(--color-primary-40);
-    color: var(--color-primary-80);
+    --background: var(--color-primary-40);
+    --color: var(--color-primary-80);
 }
 .btn-primary:hover{
-    background-color: var(--color-primary-80);
-    color: var(--color-primary-40);
+    --background: var(--color-primary-80);
+    --color: var(--color-primary-40);
 }
 
 
 //botao secundario
 .btn-secondary{
-    background-color: var(--bg-gray);
-    border:none;
+    --background: var(--bg-white);
+    --color: var(--color-primary-80);
+    --border-color: var(--color-primary-80);
+    --border-width: 2px;
 }
 .btn-secondary:hover{
-    background-color: var(--color-primary-40);
-    color: var(--color-primary-80);
-
+    --background: var(--color-primary-40);
+    --color: var(--color-primary-80);
 }
 
 
 //botao sucess
 .btn-sucess{
-    background-color: var(--color-sucess-40);
-    border: none;
+    --background: var(--color-sucess-40);
+    --color: var(--dark:);
 }
 .btn-sucess:hover{
-    background-color: var(--color-sucess-60);
+    --background: var(--color-sucess-60);
+    --color: var(--dark:);
+}
+
+
+// SWIPER STYLES
+swiper-container {
+    --swiper-pagination-bullet-inactive-color: var(--color-primary-40);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-color: var(--color-primary-80);
+    --swiper-pagination-bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--color-primary-40) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-primary-80) !important;
 }
