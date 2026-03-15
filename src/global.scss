@@ -150,7 +150,7 @@ ion-content {
     --color: var(--text-dark);
 }
 
-.container {
+.container-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,4 +171,10 @@ h1{
     font-weight: 500;
     color: var(--text-dark);
     //margin-bottom: 6px;
+}
+
+
+//linha vermelha embaixo do input quando esta selecionado
+.input-box:focus-within {
+  border: 2px solid #BF2C2F;
 }

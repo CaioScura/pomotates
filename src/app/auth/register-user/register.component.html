@@ -2,9 +2,23 @@
 
   <div class="login-container">
 
-    <h1 class="titulo">Entrar</h1>
+    <h1 class="titulo">Cadastrar</h1>
 
     <form [formGroup]="loginForm">
+
+        <!-- EMAIL -->
+      <div class="input-group">
+        <label>Nome</label>
+
+        <div class="input-box">
+          <ion-input
+            type="text"
+            placeholder="Seu nome"
+            formControlName="nome">
+          </ion-input>
+
+        </div>
+      </div>
 
       <!-- EMAIL -->
       <div class="input-group">
@@ -34,19 +48,32 @@
         </div>
       </div>
 
+      <!-- CONFIRMAR SENHA -->
+      <div class="input-group">
+        <label>Confirme a senha</label>
+
+        <div class="input-box">
+          <ion-input
+            type="password"
+            formControlName="confirmarSenha">
+          </ion-input>
+
+        </div>
+      </div>
+
 
       <!-- BOTÃO -->
       <ion-button
         expand="block"
         type="submit"
         class="btn btn-primary"
-        (click)="goToHome()">
-        Entrar
+        (click)="goToLogin()">
+        Criar uma conta
       </ion-button>
 
     </form>
 
-    <a class="novo-cadastro" (click)="goToRegister()">Novo cadastro</a>
+    <a class="novo-cadastro" (click)="goToLogin()">Já tenho uma conta</a>
 
   </div>
 

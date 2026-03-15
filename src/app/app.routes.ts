@@ -20,6 +20,16 @@ export const routes: Routes = [
   },
 
   {
+    path: 'register',
+    loadComponent: () => import('./auth/register-user/register.component').then((m) => m.RegisterComponent),
+  },
+
+  {
+    path: 'home',
+    loadComponent: () => import('./home/home.component').then((m) => m.HomeComponent),
+  },
+
+  {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
   },

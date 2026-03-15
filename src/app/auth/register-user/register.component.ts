@@ -11,9 +11,9 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -24,21 +24,17 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
   ],
 })
 
-export class LoginComponent {
+export class RegisterComponent {
     loginForm: FormGroup;
 
   constructor(private router: Router, private fb: FormBuilder) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      senha: ['', [Validators.required, Validators.minLength(6)]]
+      password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
 
-  goToRegister() {
-    this.router.navigate(['/register']);
-  }
-
-  goToHome() {
-    this.router.navigate(['/home']);
+  goToLogin() {
+    this.router.navigate(['/login']);
   }
 }
