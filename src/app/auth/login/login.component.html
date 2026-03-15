@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true">
+
+  <div class="login-container">
+
+    <h1 class="titulo">Entrar</h1>
+
+    <form [formGroup]="loginForm">
+
+      <!-- EMAIL -->
+      <div class="input-group">
+        <label>E-mail</label>
+
+        <div class="input-box">
+          <ion-input
+            type="email"
+            placeholder="helena@email.com"
+            formControlName="email">
+          </ion-input>
+
+        </div>
+      </div>
+
+
+      <!-- SENHA -->
+      <div class="input-group">
+        <label>Senha</label>
+
+        <div class="input-box">
+          <ion-input
+            type="password"
+            formControlName="senha">
+          </ion-input>
+
+        </div>
+      </div>
+
+
+      <!-- BOTÃO -->
+      <ion-button
+        expand="block"
+        type="submit"
+        class="botao-login">
+        Entrar
+      </ion-button>
+
+    </form>
+
+    <a class="novo-cadastro">Novo cadastro</a>
+
+  </div>
+
+</ion-content>

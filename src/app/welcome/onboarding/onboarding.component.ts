@@ -17,8 +17,8 @@ register();
 export class OnboardingComponent {
   constructor(private router: Router) {}
 
-  goToTabs() {
-    this.router.navigate(['/tabs']);
+  goToLogin() {
+    this.router.navigate(['/login']);
   }
 
   goBack() {
