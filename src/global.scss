@@ -93,6 +93,7 @@ ion-button{
 .btn-primary{
     --background: var(--color-primary-40);
     --color: var(--color-primary-80);
+    --box-shadow: 1px 1px 1px 0px #00000014;
 }
 .btn-primary:hover{
     --background: var(--color-primary-80);
