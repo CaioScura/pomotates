@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { 
-  IonContent, 
-  IonButton, 
+import {
+  IonContent,
+  IonButton,
+  IonHeader,
+  IonIcon,
+  IonTab,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+  IonTitle,
+  IonToolbar
 } from '@ionic/angular/standalone';
+
 import { CommonModule } from '@angular/common';
+import { addIcons } from 'ionicons';
+import { library, playCircle, radio, search } from 'ionicons/icons';
 
 
 
@@ -16,21 +27,16 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     IonContent,
+    IonHeader, IonIcon, IonTab, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar
   ],
 })
 
 export class HomeComponent {
-    
 
-  constructor(private router: Router) {
-    
+
+  constructor() {
+    addIcons({ library, playCircle, radio, search });
   }
 
-  goToRegister() {
-    this.router.navigate(['/register']);
-  }
 
-  goToHome() {
-    this.router.navigate(['/home']);
-  }
 }
