@@ -5,14 +5,33 @@
           <div id="home-page" class="ion-page">
             <ion-header>
               <ion-toolbar>
-                <ion-title>Home</ion-title>
+
+                <ion-buttons slot="start">
+                  <ion-button>
+                    <ion-icon name="menu-outline"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+
+                <ion-title>Bom te ver, Caiote!</ion-title>
+
+                <ion-buttons slot="end">
+                  <ion-button>
+                    <ion-icon name="notifications-outline"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+
               </ion-toolbar>
             </ion-header>
+
+
             <ion-content>
-              <div class="example-content">Listen now content</div>
+              <div class="example-content">Home</div>
             </ion-content>
           </div>
         </ion-tab>
+
+
+
         <ion-tab tab="play-pomodoro">
           <div id="play-pomodoro" class="ion-page">
             <ion-header>
@@ -25,44 +44,33 @@
             </ion-content>
           </div>
         </ion-tab>
-        <ion-tab tab="library">
-          <div id="library-page" class="ion-page">
+        <ion-tab tab="chat">
+          <div id="chat-page" class="ion-page">
             <ion-header>
               <ion-toolbar>
-                <ion-title>Library</ion-title>
+                <ion-title>Chat</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content>
-              <div class="example-content">Library content</div>
+              <div class="example-content">Chat content</div>
             </ion-content>
           </div>
         </ion-tab>
-        <ion-tab tab="search">
-          <div id="search-page" class="ion-page">
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Search</ion-title>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content>
-              <div class="example-content">Search content</div>
-            </ion-content>
-          </div>
-        </ion-tab>
+      
 
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="home">
-            <ion-icon name="play-circle"></ion-icon>
+            <ion-icon name="stats-chart-outline"></ion-icon>
             Relatório
           </ion-tab-button>
 
           <ion-tab-button tab="play-pomodoro">
-            <ion-icon name="play-pomodoro"></ion-icon>
+            <ion-icon name="play-outline"></ion-icon>
             Iniciar pomodoro
           </ion-tab-button>
 
-          <ion-tab-button tab="library">
-            <ion-icon name="library"></ion-icon>
+          <ion-tab-button tab="chat">
+            <ion-icon name="chatbox-outline"></ion-icon>
             Chat
           </ion-tab-button>
         </ion-tab-bar>

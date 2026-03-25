@@ -4,3 +4,25 @@
   justify-content: center;
   height: 100%;
 }
+
+ion-toolbar {
+  --background: var(--bg-white);
+  --color: var(--text-dark);
+}
+
+ion-header {
+  --box-shadow: none;
+  box-shadow: none;
+}
+
+
+ion-tab-bar {
+  --background: var(--bg-white);
+  ---color: var(--text-dark);
+  --color-selected: var(--color-primary-80); /* ícone ativo */
+  border-top: 1px solid #e0e0e0;
+}
+
+ion-tab-button {
+  font-size: 12px;
+}

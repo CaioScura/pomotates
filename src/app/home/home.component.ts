@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import {
   IonContent,
   IonButton,
+  IonButtons,
   IonHeader,
   IonIcon,
   IonTab,
@@ -15,7 +16,7 @@ import {
 
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
-import { library, playCircle, radio, search } from 'ionicons/icons';
+import { chatboxOutline, playCircle, playOutline, statsChartOutline, search, menuOutline, notificationsOutline } from 'ionicons/icons';
 
 
 
@@ -27,6 +28,8 @@ import { library, playCircle, radio, search } from 'ionicons/icons';
   imports: [
     CommonModule,
     IonContent,
+    IonButton,
+    IonButtons,
     IonHeader, IonIcon, IonTab, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar
   ],
 })
@@ -35,7 +38,7 @@ export class HomeComponent {
 
 
   constructor() {
-    addIcons({ library, playCircle, radio, search });
+    addIcons({ chatboxOutline, playCircle, playOutline, statsChartOutline, search, menuOutline, notificationsOutline });
   }
 
 
